@@ -6,5 +6,8 @@ describe('Loading the tictactoe game', () => {
         );
         cy.get('[data-testid="load-game"]').click();
 		cy.wait('@loadGame');
+        cy.contains('X')
+        cy.contains('Y')
+        cy.contains('123456789')
     });
 });

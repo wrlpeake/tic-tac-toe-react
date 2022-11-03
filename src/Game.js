@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Game() {
+export function Game() {
 	const [posts, setPosts] = useState([]);
 	const [loading, setLoading] = useState(false);
 
@@ -29,18 +29,17 @@ function Game() {
 						Load Game
 					</button>
 				</section>
-
-				{/* <section data-testid="posts">
-					{posts.posts.map((post) => (
+				{loading && <p aria-label="loading">Loading</p>}
+				<section data-testid="posts">
+					{posts.map((post) => (
 						<article key={post.id}>
-							<h3>{post.title}</h3>
-							<p>{post.body}</p>
+							<h3>Player One Default Marker: {post.player_one_marker}</h3>
+              <h3>Player Two Default Marker: {post.player_two_marker}</h3>
+              <h3>Board Array: {post.board}</h3>
 						</article>
 					))}
-				</section>          */}
+				</section>         
 			</main>
 		</div>
 	);
-}
-
-export { Game };
+};
