@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Tic-Tac-Toe-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project creates a React front-end which uses my Sinatra API `TicTacToeWP` as a back-end.
 
 ## Available Scripts
 
