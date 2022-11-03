@@ -34,8 +34,8 @@ export function Game() {
 					{posts.map((post) => (
 						<article key={post.id}>
 							<h3>Player One Default Marker: {post.player_one_marker}</h3>
-              <h3>Player Two Default Marker: {post.player_two_marker}</h3>
-              <h3>Board Array: {post.board}</h3>
+              				<h3>Player Two Default Marker: {post.player_two_marker}</h3>
+              				<h3>Board (to be made into a grid): {post.board}</h3>
 						</article>
 					))}
 				</section>         
