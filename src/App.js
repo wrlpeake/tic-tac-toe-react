@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import NewMessageForm from './NewMessageForm';
 import MessageList from './MessageList';
-import { LoadGame } from './LoadGame';
 import { Game } from './Game';
 
 export default function App() {
@@ -13,7 +12,10 @@ export default function App() {
   return (
     <>
       <Game />
-      {/* <LoadGame /> */}
+      <p></p>
+      <p></p>
+      <NewMessageForm onSend={handleSend} />
+      <MessageList data={messages} />
     </>
   );
 }
